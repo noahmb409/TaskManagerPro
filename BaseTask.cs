@@ -15,7 +15,7 @@ public abstract class BaseTask : ITask{
         IsCompleted = true;
     }
 
-    public abstract virtual Display();
+    public abstract void Display();
 }
 
 
