@@ -1,4 +1,6 @@
-namespace TaskManagerPro;
+namespace TaskManagerPro.Core.Abstract;
+using TaskManagerPro.Core.Interfaces;
+
 
 public abstract class BaseTask : ITask{
     public string Title {get; protected set; }
@@ -12,10 +14,4 @@ public abstract class BaseTask : ITask{
 
     public virtual void Complete()
     {
-        IsCompleted = true;
-    }
-
-    public abstract void Display();
-}
-
-
+        IsCompleted = 

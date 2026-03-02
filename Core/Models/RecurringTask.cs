@@ -1,4 +1,5 @@
-namespace TaskManagerPro;
+namespace TaskManagerPro.Core.Models;
+using TaskManagerPro.Core.Abstract;
 
 public class RecurringTask : BaseTask
 {
@@ -11,11 +12,9 @@ public class RecurringTask : BaseTask
 
     public override void Complete()
     {
-        Console.WriteLine("");
+        Console.WriteLine($"{Title} completed once,but it recurs");
     }
 
     public override void Display()
     {
-        Console.WriteLine($"[Recurred] {Title} ({Recurrences}) - Completed: {IsCompleted}");
-    }
-}
+        Console

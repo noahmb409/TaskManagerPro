@@ -1,4 +1,5 @@
-namespace TaskManagerPro;
+namespace TaskManagerPro.Core.Models;
+using TaskManagerPro.Core.Abstract;
 
 public class SimpleTask : BaseTask
 {
@@ -7,6 +8,4 @@ public class SimpleTask : BaseTask
     
     public override void Display()
     {
-        Console.WriteLine($"[Simple] {Title} - Completed: {IsCompleted}");
-    }
-}
+        Console.WriteLine($"[Simpl

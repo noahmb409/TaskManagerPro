@@ -1,4 +1,5 @@
-namespace TaskManagerPro;
+namespace TaskManagerPro.Core.Models;
+using TaskManagerPro.Core.Abstract;
 
 public class TimedTask : BaseTask
 {
@@ -11,6 +12,4 @@ public class TimedTask : BaseTask
 
     public override void Display()
     {
-        Console.WriteLine($"[Timed] {Title} ({Minutes} min) - Completed: {IsCompleted}");
-    }
-}
+        Console.WriteLine($"[Timed] {Title} ({Min
