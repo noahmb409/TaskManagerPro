@@ -8,4 +8,6 @@ public class SimpleTask : BaseTask
     
     public override void Display()
     {
-        Console.WriteLine($"[Simpl
+        Console.WriteLine($"[Simple] {Title} - Completed: {IsCompleted}");
+    }
+}

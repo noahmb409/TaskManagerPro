@@ -6,4 +6,4 @@ public record SimpleTaskFP
 (
     string Title,
     bool IsCompleted= false
- ) : ITaskFP
+ ) : ITaskFP;

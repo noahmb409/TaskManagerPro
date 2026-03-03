@@ -12,4 +12,6 @@ public class TimedTask : BaseTask
 
     public override void Display()
     {
-        Console.WriteLine($"[Timed] {Title} ({Min
+        Console.WriteLine($"[Timed] {Title} ({Minutes} min) - Completed: {IsCompleted}");
+    }
+}

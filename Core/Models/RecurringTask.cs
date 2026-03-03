@@ -17,4 +17,6 @@ public class RecurringTask : BaseTask
 
     public override void Display()
     {
-        Console
+        Console.WriteLine($"[Recurred] {Title} ({Recurrences}) - Completed: {IsCompleted}");
+    }
+}
